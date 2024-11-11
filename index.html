@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Associação Clave de Sol</title>
+    <!-- Adicionando o Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Cabeçalho (Logo centralizado e links à direita) -->
+<header class="bg-white text-dark p-3 shadow-sm">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <!-- Logo Centralizado -->
+            <div class="d-flex justify-content-center flex-grow-1">
+                <img src="assets/images/logo.png" alt="Logo" id="logo" class="img-fluid" style="max-height: 50px;">
+            </div>
+
+            <!-- Links de Navegação à Direita -->
+            <nav class="ms-auto">
+                <a href="index.html" class="text-dark ms-3">Home</a>
+                <a href="cadastrar.html" class="text-dark ms-3">Cadastrar</a>
+                <a href="listar.html" class="text-dark ms-3">Listar</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+
+
+<!-- Banner (Agora ocupa a largura total da página) -->
+<section id="banner" class="my-4">
+    <img src="assets/images/banner.png" alt="Banner" class="w-100">
+</section>
+
+<!-- Descrição da Associação (Com h2 e p à esquerda e a imagem à direita) -->
+<section id="descricao" class="container my-4">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <h2>A Associação Comunitária Clave de Sol</h2>
+            <p>Oferece atividades socioeducativas e artísticas. O nosso carro chefe é a música. Também atuamos no Serviço de Proteção Social Básica, Serviço de Convivência e Fortalecimento de Vínculos para crianças e adolescentes e na área de formação profissional.</p>
+        </div>
+        <div class="col-md-6">
+            <img id="descricao-img" src="assets/images/image.png" alt="Imagem Descrição" class="img-fluid">
+        </div>
+    </div>
+</section>
+
+<!-- Seleção do Instrumento -->
+<section id="instrumento" class="container my-4">
+    <label for="selectInstrumento" class="form-label">Escolha um Instrumento:</label>
+    <select id="selectInstrumento" class="form-select">
+        <option value="">Selecione um Instrumento</option>
+    </select>
+</section>
+
+<!-- Detalhes do Instrumento (Ocultos inicialmente) -->
+<section id="detalhes" style="display:none;" class="container my-4">
+    <div class="row">
+        <div id="fotoProfessor" class="col-md-4">
+            <h3>Foto do Professor:</h3>
+            <img id="fotoProfessorImg" src="" alt="Foto do Professor" class="img-fluid img-custom">
+        </div>
+        <div id="tempoAprendizado" class="col-md-4">
+            <h3>Tempo de Aprendizado:</h3>
+            <p id="tempo"></p>
+        </div>
+        <div id="fotoInstrumento" class="col-md-4">
+            <h3>Foto do Instrumento:</h3>
+            <img id="fotoInstrumentoImg" src="" alt="Foto do Instrumento" class="img-fluid img-custom">
+        </div>
+    </div>
+</section>
+
+<!-- Rodapé -->
+<footer class="bg-success text-white text-center py-3">
+    <p>Projeto institucional, sem fins lucrativos.</p>
+</footer>
+
+<script src="js/script.js"></script>
+<!-- Adicionando o Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

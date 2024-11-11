@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar - Associação Clave de Sol</title>
+    <!-- Adicionando o Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Cabeçalho (Logo centralizado e links à direita) -->
+<header class="bg-white text-dark p-3 shadow-sm">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <!-- Logo Centralizado -->
+            <div class="d-flex justify-content-center flex-grow-1">
+                <img src="assets/images/logo.png" alt="Logo" id="logo" class="img-fluid" style="max-height: 50px;">
+            </div>
+
+            <!-- Links de Navegação à Direita -->
+            <nav class="ms-auto">
+                <a href="index.html" class="text-dark ms-3">Home</a>
+                <a href="cadastrar.html" class="text-dark ms-3">Cadastrar</a>
+                <a href="listar.html" class="text-dark ms-3">Listar</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+
+
+<!-- Cadastro de Oficineiro -->
+<section id="cadastroOficineiro" class="container my-4">
+    <h2>Cadastrar Oficineiro</h2>
+    <form id="formOficineiro">
+        <div class="mb-3">
+            <label for="nomeOficineiro" class="form-label">Nome:</label>
+            <input type="text" id="nomeOficineiro" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="idadeOficineiro" class="form-label">Idade:</label>
+            <input type="number" id="idadeOficineiro" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="tempoEmpresa" class="form-label">Tempo de Empresa (meses):</label>
+            <input type="number" id="tempoEmpresa" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="fotoOficineiro" class="form-label">Foto:</label>
+            <input type="text" id="fotoOficineiro" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-success">Cadastrar Oficineiro</button>
+    </form>
+</section>
+
+<!-- Cadastro de Instrumento -->
+<section id="cadastroInstrumento" style="display:none;" class="container my-4">
+    <h2>Cadastrar Instrumento</h2>
+    <form id="formInstrumento">
+        <div class="mb-3">
+            <label for="nomeInstrumento" class="form-label">Nome:</label>
+            <input type="text" id="nomeInstrumento" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="tempoAprendizado" class="form-label">Tempo de Aprendizado (meses):</label>
+            <input type="number" id="tempoAprendizado" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="fotoInstrumento" class="form-label">Foto:</label>
+            <input type="text" id="fotoInstrumento" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="selectOficineiro" class="form-label">Professor:</label>
+            <select id="selectOficineiro" class="form-select" required></select>
+        </div>
+        <button type="submit" class="btn btn-success">Cadastrar Instrumento</button>
+    </form>
+</section>
+
+<!-- Rodapé -->
+<footer class="bg-success text-white text-center py-3">
+    <p>Projeto institucional, sem fins lucrativos.</p>
+</footer>
+
+<script src="js/scriptCadastrar.js" defer></script>
+<!-- Adicionando o Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

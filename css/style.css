@@ -1,0 +1,210 @@
+/* Reset básico e fontes */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ffffff; /* Cabeçalho branco */
+    color: #333;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Centralizando logo e links no cabeçalho */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+header img {
+    max-height: 60px;
+}
+
+/* Links de navegação no header */
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #4CAF50; /* Mudar cor ao passar o mouse */
+}
+
+/* Banner */
+#banner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+/* Descrição da Associação */
+#descricao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#descricao h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+#descricao p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+#descricao-img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Estilos para inputs, selects e buttons */
+input[type="text"], input[type="number"], select, button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Botões */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f8f8f8;
+    color: #333;
+    font-weight: 600;
+}
+
+table tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Rodapé */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Ajustes para imagens personalizadas */
+.img-custom {
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Melhorando a legibilidade dos textos */
+h2, h3 {
+    font-weight: 600;
+    color: #333;
+}
+
+/* Ajustando o espaçamento entre seções */
+section {
+    margin: 40px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Melhorando os inputs */
+input, select, textarea {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Ajuste de layout para os detalhes do instrumento */
+#detalhes .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#detalhes .col-md-4 {
+    flex: 1;
+    text-align: center;
+}
+
+#detalhes img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Mudança para o layout do formulário */
+form {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+form label {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Estilo para os selects */
+select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
